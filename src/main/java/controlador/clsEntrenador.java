@@ -17,102 +17,90 @@ public class clsEntrenador {
     String sApellido2;
     String sFecha_nacimiento;
     String sId_usuario_fk;
-    long   lFoto_Entrenador;
-//ip
-//usuario en compu
-//scriptgeneral_g3
+    Long lFoto_Entrenador;
 
     public clsEntrenador() {
     }
 
-    public clsEntrenador(int iId_bitacora) {
-        this.iId_bitacora = iId_bitacora;
+    public clsEntrenador(int Id_entrenador, int iNombre1, String sNombre2, String sApellido1, String sApellido2, String sFecha_nacimiento, String sId_usuario_fk, Long lFoto_Entrenador) {
+        this.Id_entrenador = Id_entrenador;
+        this.iNombre1 = iNombre1;
+        this.sNombre2 = sNombre2;
+        this.sApellido1 = sApellido1;
+        this.sApellido2 = sApellido2;
+        this.sFecha_nacimiento = sFecha_nacimiento;
+        this.sId_usuario_fk = sId_usuario_fk;
+        this.lFoto_Entrenador = lFoto_Entrenador;
     }
 
-    public clsEntrenador(String sFecha, String sArea, String sAccion, String sIp, String sNombrepc, int iId_usuario,int iId_aplicacion) {
-        this.sFecha = sFecha;
-        this.sArea = sArea;
-        this.sAccion = sAccion;
-        this.sIp = sIp;
-        this.sNombrepc = sNombrepc;
-        this.iId_usuario = iId_usuario;
-        this.iId_aplicacion = iId_aplicacion;
+    public int getId_entrenador() {
+        return Id_entrenador;
     }
 
-    public int fGetId_bitacora() {
-        return iId_bitacora;
+    public void setId_entrenador(int Id_entrenador) {
+        this.Id_entrenador = Id_entrenador;
     }
 
-    public void fSetId_Bitacora(int iId_bitacora) {
-        this.iId_bitacora = iId_bitacora;
+    public int getiNombre1() {
+        return iNombre1;
     }
 
-    public String fGetfecha_Bitacora() {
-        return sFecha;
+    public void setiNombre1(int iNombre1) {
+        this.iNombre1 = iNombre1;
     }
 
-    public void fSetfecha_Bitacora(String sFecha) {
-        this.sFecha = sFecha;
+    public String getsNombre2() {
+        return sNombre2;
     }
 
-
-    public String fGetarea_Bitacora() {
-        return sArea;
+    public void setsNombre2(String sNombre2) {
+        this.sNombre2 = sNombre2;
     }
 
-    public void fSetarea_Bitacora(String sArea) {
-        this.sArea = sArea;
+    public String getsApellido1() {
+        return sApellido1;
     }
 
-
-    public String fGetaccion_Bitacora() {
-        return sAccion;
+    public void setsApellido1(String sApellido1) {
+        this.sApellido1 = sApellido1;
     }
 
-    public void fSetaccion_Bitacora(String sAccion) {
-        this.sAccion = sAccion;
+    public String getsApellido2() {
+        return sApellido2;
     }
 
-    public String fGetip_Bitacora() {
-        return sIp;
+    public void setsApellido2(String sApellido2) {
+        this.sApellido2 = sApellido2;
     }
 
-    public void fSetip_Bitacora(String sIp) {
-        this.sIp = sIp;
+    public String getsFecha_nacimiento() {
+        return sFecha_nacimiento;
     }
 
-    public String fGetnombrepc_Bitacora() {
-        return sNombrepc;
+    public void setsFecha_nacimiento(String sFecha_nacimiento) {
+        this.sFecha_nacimiento = sFecha_nacimiento;
     }
 
-    public void fSetnombrepc_Bitacora(String sNombrepc) {
-        this.sNombrepc = sNombrepc;
+    public String getsId_usuario_fk() {
+        return sId_usuario_fk;
     }
 
-
-  public int fGetId_Usuario() {
-        return iId_usuario;
+    public void setsId_usuario_fk(String sId_usuario_fk) {
+        this.sId_usuario_fk = sId_usuario_fk;
     }
 
-    public void fSetId_Usuario(int iId_usuario) {
-        this.iId_usuario = iId_usuario;
+    public Long getlFoto_Entrenador() {
+        return lFoto_Entrenador;
     }
 
-  public int fGetId_Aplicacion() {
-        return iId_aplicacion;
+    public void setlFoto_Entrenador(Long lFoto_Entrenador) {
+        this.lFoto_Entrenador = lFoto_Entrenador;
     }
-
-    public void fSetId_Aplicacion(int iId_aplicacion) {
-        this.iId_aplicacion = iId_aplicacion;
-    }
-
-
-
-
 
     @Override
     public String toString() {
-        return "tbl_bitacora{" + "id_bitacora=" + iId_bitacora + ", fecha=" + sFecha + ", area=" + sArea + ", accion=" + sAccion + ", id_usuario=" + iId_usuario +", id_aplicacion=" + iId_aplicacion +", ip=" + sIp +", nombrepc=" + sNombrepc + '}';
+        return "clsEntrenador{" + "Id_entrenador=" + Id_entrenador + ", iNombre1=" + iNombre1 + ", sNombre2=" + sNombre2 + ", sApellido1=" + sApellido1 + ", sApellido2=" + sApellido2 + ", sFecha_nacimiento=" + sFecha_nacimiento + ", sId_usuario_fk=" + sId_usuario_fk + ", lFoto_Entrenador=" + lFoto_Entrenador + '}';
     }
-    
+
+
 }
